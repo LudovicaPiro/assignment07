@@ -81,14 +81,7 @@ function draw() {    var vol=mic.getLevel();
   
     var level = mic.getLevel();
 
-    /*
-                    fill(255,255,255);
-                    rect(20,20,300,50);
-                    fill(0,0,0);
-                    text(level, 20,40);
-                    text(a, 20,60);
-                    text(delta, 20, 70)
-    */
+
                 }
 
 function fiore(nettare) {   var vol=mic.getLevel();
