@@ -30,17 +30,17 @@ function draw() {    var vol=mic.getLevel();
                     ellipse(0,0, 190,190);
        
                     //crescita dello stelo
-                    if(vol<0.05 && vivo==true &&vol>=0.003) {    
+                    if(vol<0.1 && vivo==true &&vol>=0.003) {    
                                         a+=0.2
                                     }
-                    else if(vol>=0.05) {vivo=false;
+                    else if(vol>=0.1) {vivo=false;
                                         a+=0;}
                     else{   
                            // ellipse(0,0, 190,190);
                             //a=0;
                         };
                  //colore stelo
-              if (vol>=0.05 ||vivo==false) 
+              if (vol>=0.1 ||vivo==false) 
                   
                     {       stelo("#bc8f8f");
                             push();
@@ -85,7 +85,7 @@ function draw() {    var vol=mic.getLevel();
                 }
 
 function fiore(nettare) {   var vol=mic.getLevel();
-                            if (vol>=0.05 ||vivo==false){var p="#d18e8e";}
+                            if (vol>=0.1 ||vivo==false){var p="#d18e8e";}
                     else{   var myImage=capture.loadPixels();
                             var p=myImage.get(250,250);
                         }
